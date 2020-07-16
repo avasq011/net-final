@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Live Stream</title>
+    <style>
+        #container {
+            margin: 0px auto;
+            width: 500px;
+            height: 375px;
+            border: 10px #333 solid;
+        }
+
+        #image {
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+        }
+    </style>
+    <script>
+            function start()
+            {
+                var video = document.querySelector("#stream");
+                video.onloadedmetadata = function (e)
+                {
+                    video.play();
+                };
+            }
+    </script>
+</head>
+<body onload="start()">
+    <video id="stream" width="640" height="480" controls autoplay muted>
+        <source src="{{s}}" type="video/ogg" codecs="theora" />
+    </video>
+</body>
+</html>
