@@ -92,8 +92,7 @@ def static_feed():
 @app.route('/live')
 @requires_auth
 def live():
-    #source = "http://" + os.environ.get("SITE") + ":2001/stream.ogg"
-    source = "https://104.55.87.172:4747/video"
+    source = "http://" + os.environ.get("SITE") + ":2001/stream.ogg"
     return render_template('live.html', s=source)
     
 @app.route('/dashboard')
