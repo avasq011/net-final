@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Net Centric Final</title>
-        <style>
-          
-        p{
-        color: white;
-            font-size: 300%;
-        text-align: center;
-        
-        }
+    <head><title>Static Stream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  .center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  color: white;
+  font-size: 90%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p{
+    color: white;
+    font-size: 200%;
+    text-align: left;        
+}
         @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
         body { 
         background-image: url('https://4.bp.blogspot.com/-zO8hwvt7iMk/XAVxt4aoQvI/AAAAAAAAwa4/D5m3ApKkAAABZteHWWv_5uzTn8X7JaDxgCPcBGAYYCw/s640/7T9364v.gif');
@@ -19,79 +40,25 @@
         background-size: cover;
         
         }
-          
-    /* <!-- NEON LIGHT STYLE CODE --> */
-          
-            .neon{
-            position: absolute;
-            top: 10%;
-            Left: 50%;
-            transform: translate(-50%,-50%);
-            margin: 0;
-            padding: 0 20px;
-            font-size: 6em;
-            color: #0AF4CF;
-            text-shadow: 0 0 20px #0AF4CF;
-            
-        }
-          .neon: after{
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            Left: 0;
-            padding: 0 20px;
-            z-index: -1;
-            color: #0AF4CF;
-            filter: blur(15px);
-            
-          }
 
-          .neon: before{
-              content: '';
-              position: absolute;
-              top: 0;
-              Left: 0;
-              width: 100%;
-              height: 100%;
-              background: #fe3a80;
-              z-index: -2;
-              opacity: .5;
-              filter: blur(40x);
-            
-          }
-          
-    /* <!-- NEON LIGHT STYLE --> */
-          
-      </style> 
+    </style>
     </head>
     <body>
+    <h2>STATIC</h2>
         <div>
-        <!-- neon code -->
-        <h1 class ="neon" data-text = "NEON LIGHTS">CNT Project</h1>
-        <!-- neon code end -->
-           
+        <p><b>STATIC STREAM<br>~~~~~~~~~~~~~~~~</p>
+      </div>
+        <div class="center">
+          <form>
+            </br>
+          <input type="button" value="Back to Main Page" onclick="history.back()">
+          </form></br>
+            <video width="640" height="480" controls>
+                <source src="/static/vid.mp4" type="video/mp4"/>
+            </video>            
         </div>
-        <div>   
-        
-        <p>    
-        <br /> 
-        <br />
-        <br />
-        </p>
-        
-        <a href="/static_feed" style = "margin:auto; font-size: 300%; color: white; text-align:center; display:block;" class="button large hpbottom">See the static stream</a>
-          
-        <a href="/live" style = "margin:auto; font-size: 300%; color: white; text-align:center; display:block;" class="button large hpbottom">See the live stream</a>
-           
+        <div>
+           <a href="/logout" style = "margin:auto; font-size: 150%; color: white; text-align:center; display:block;" class="button large hpbottom">Logout</a>
         </div>
-        
-    <div>
-        <a href="/logout" style = "margin:auto; font-size: 300%; color: white; text-align:center; display:block;" class="button large hpbottom">Logout</a>
-          
-        </div>
-
-    <div>
-        <p><br><br><b>GROUP MEMBERS<br>~~~~~~~~~~~~~~~~</b><br>==>Alejandra Vasquez<br>Isabel Montes De Oca<br>Cesar Martin<br>Michael Vigil<br>John Quitto<br></p>
-     </div>       
     </body>
 </html>

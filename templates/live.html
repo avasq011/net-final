@@ -17,6 +17,43 @@
             height: 375px;
             background-color: #666;
         }
+        .center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  color: white;
+  font-size: 90%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p{
+    color: white;
+    font-size: 200%;
+    text-align: left;        
+}
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+        body { 
+        background-image: url('https://4.bp.blogspot.com/-zO8hwvt7iMk/XAVxt4aoQvI/AAAAAAAAwa4/D5m3ApKkAAABZteHWWv_5uzTn8X7JaDxgCPcBGAYYCw/s640/7T9364v.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+        }
+
     </style>
     <script>
             function start()
@@ -30,8 +67,19 @@
     </script>
 </head>
 <body onload="start()">
+<div>
+        <p><b>LIVE STREAM<br>~~~~~~~~~~~~~~~~</p>
+        </div>
+        <div class="center">
+            <form>
+            </br>
+            <input type="button" value="Back to Main Page" onclick="history.back()">
+            </form></br>
     <video id="stream" width="640" height="480" autoplay muted>
         <source src="{{s}}" type="video/ogg" codecs="theora" />
     </video>
+    <div>
+           <a href="/logout" style = "margin:auto; font-size: 150%; color: white; text-align:center; display:block;" class="button large hpbottom">Logout</a>
+        </div>
 </body>
 </html>
