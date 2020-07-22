@@ -18,32 +18,20 @@ a {
 }
 
 a:link {
-  color: black;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
-  color: blue;
-  background-color: transparent;
-  text-decoration: none;
-}
 a:hover {
-  color: red;
   background-color: transparent;
   text-decoration: underline;
 }
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
 p{
-        color: white;
-            font-size: 300%;
-        text-align: center;
-        
-        }
+    color: white;
+    font-size: 200%;
+    text-align: left;        
+}
         @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
         body { 
         background-image: url('https://4.bp.blogspot.com/-zO8hwvt7iMk/XAVxt4aoQvI/AAAAAAAAwa4/D5m3ApKkAAABZteHWWv_5uzTn8X7JaDxgCPcBGAYYCw/s640/7T9364v.gif');
@@ -52,58 +40,19 @@ p{
         background-size: cover;
         
         }
-          
-    /* <!-- NEON LIGHT STYLE CODE --> */
-          
-            .neon{
-            position: absolute;
-            top: 10%;
-            Left: 50%;
-            transform: translate(-50%,-50%);
-            margin: 0;
-            padding: 0 20px;
-            font-size: 6em;
-            color: #0AF4CF;
-            text-shadow: 0 0 20px #0AF4CF;
-            
-        }
-          .neon: after{
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            Left: 0;
-            padding: 0 20px;
-            z-index: -1;
-            color: #0AF4CF;
-            filter: blur(15px);
-            
-          }
-
-          .neon: before{
-              content: '';
-              position: absolute;
-              top: 0;
-              Left: 0;
-              width: 100%;
-              height: 100%;
-              background: #fe3a80;
-              z-index: -2;
-              opacity: .5;
-              filter: blur(40x);
-            
-          }
-          
-    /* <!-- NEON LIGHT STYLE --> */
-          
 
     </style>
     </head>
     <body>
     <h2>STATIC</h2>
+        <div>
+        <p><b>STATIC STREAM<br>~~~~~~~~~~~~~~~~</p>
+      </div>
         <div class="center">
-        <form>
-      <input type="button" value="Back to Main Page"  onclick="history.back()">
-      </form></br>
+          <form>
+            </br>
+          <input type="button" value="Back to Main Page" onclick="history.back()">
+          </form></br>
             <video width="640" height="480" controls>
                 <source src="/static/vid.mp4" type="video/mp4"/>
             </video>            
